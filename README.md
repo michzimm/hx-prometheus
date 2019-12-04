@@ -1,3 +1,5 @@
+Forked and Updated Dec. 4 2019 from https://github.com/Kris-Sekula/Hyperflex-API
+
 # Hyperflex-API
 
 This is an example of how to use the Cisco Hyperflex API with python. I've been tasked with deploying multiple Hyperflex Clusters at Cisco Live 2018 in Barcelona. As part of that deployment, I wanted to have a way to monitor the performance of the system. The Hyperflex system has a built performance "screen" that can be accessed via the http://hx-controller_ip/perf link but I wanted to have both of my system's data presented on one screen. 
@@ -8,7 +10,7 @@ MBps_Read{host="10.127.253.81"} 1728.0
 MBps_Write{host="10.127.253.81"} 1490454.7 
 IOPS_Read{host="10.127.253.81"} 0.9 
 IOPS_Write{host="10.127.253.81"} 42.9 
-Lat_Read{host="10.127.253.81"} 2.333 
+Lat_Read{host="10.127.253.81"} 2.333
 Lat_Write{host="10.127.253.81"} 6.261
 ```
 Every 1 min Prometheus calls the url and processes the data.
@@ -21,6 +23,10 @@ Here is an example of those the graphs look like:
 
 1. Install ubuntu server 16.04 64bit (I used: ubuntu-16.04.5-server-amd64.iso)
     * Basic installation, only select OpenSSH from the package list, create a user.
+    * Install python (tested w/ version 2)
+    * Install pre-requisites --> "apt-get install python-pip libevent-dev python-all-dev"
+    * Install flask --> "pip install flask"
+    * Install gevent --> "pip install gevent"
 2. Install Prometheus:
    * create the required user:
    ```
@@ -168,12 +174,12 @@ Here is an example of those the graphs look like:
    
    * import dashboard from file :
    
-   use the provided [HX-monitor-Grafana_normal.json](https://github.com/Kris-Sekula/Hyperflex-API/blob/master/HX-monitor-Grafana_normal.json) file that has a   preconfigured dashboard you will need to open this file first and replace the ip addresses that I've been using with our addresses. Once done save and use it to import new dashboard into Grafana.
+   use the provided [HX-monitor-Grafana_normal.json](https://github.com/michzimm/hx-prometheus/blob/master/HX-monitor-Grafana_normal.json) file that has a   preconfigured dashboard you will need to open this file first and replace the ip addresses that I've been using with our addresses. Once done save and use it to import new dashboard into Grafana.
 
 4. Install the script:
    * Clone the repositry locally.
    ```
-   git clone https://github.com/Kris-Sekula/Hyperflex-API.git'
+   git clone https://github.com/michzimm/hx-prometheus.git'
    ```
    * Create credentials file:
    ```
