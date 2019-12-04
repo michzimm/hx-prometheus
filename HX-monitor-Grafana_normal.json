@@ -58,28 +58,28 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "MBps_Write{host=\"10.127.253.85\"}",
+          "expr": "MBps_Write{host=\"10.2.17.14\"}",
           "format": "time_series",
           "intervalFactor": 2,
           "legendFormat": "Write Throughput HX-1",
           "refId": "A"
         },
         {
-          "expr": "MBps_Read{host=\"10.127.253.85\"}",
+          "expr": "MBps_Read{host=\"10.2.17.14\"}",
           "format": "time_series",
           "intervalFactor": 2,
           "legendFormat": "Read Throughput HX-1",
           "refId": "B"
         },
         {
-          "expr": "MBps_Write{host=\"10.127.254.85\"}",
+          "expr": "MBps_Write{host=\"10.2.14.15\"}",
           "format": "time_series",
           "intervalFactor": 2,
           "legendFormat": "Write Throughput HX-2",
           "refId": "C"
         },
         {
-          "expr": "MBps_Read{host=\"10.127.254.85\"}",
+          "expr": "MBps_Read{host=\"10.2.14.15\"}",
           "format": "time_series",
           "intervalFactor": 2,
           "legendFormat": "Read Throughput HX-2",
@@ -166,7 +166,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "IOPS_Read{host='10.127.253.85'}",
+          "expr": "IOPS_Read{host='10.2.17.14'}",
           "format": "time_series",
           "hide": false,
           "intervalFactor": 2,
@@ -174,14 +174,14 @@
           "refId": "A"
         },
         {
-          "expr": "IOPS_Write{host='10.127.253.85'}",
+          "expr": "IOPS_Write{host='10.2.17.14'}",
           "format": "time_series",
           "intervalFactor": 2,
           "legendFormat": "IOPS Write HX-1",
           "refId": "B"
         },
         {
-          "expr": "IOPS_Read{host='10.127.254.85'}",
+          "expr": "IOPS_Read{host='10.2.14.15'}",
           "format": "time_series",
           "hide": false,
           "intervalFactor": 2,
@@ -189,7 +189,7 @@
           "refId": "C"
         },
         {
-          "expr": "IOPS_Write{host='10.127.254.85'}",
+          "expr": "IOPS_Write{host='10.2.14.15'}",
           "format": "time_series",
           "intervalFactor": 2,
           "legendFormat": "IOPS Write HX-2",
@@ -276,28 +276,28 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "Lat_Read{host='10.127.253.85'}",
+          "expr": "Lat_Read{host='10.2.17.14'}",
           "format": "time_series",
           "intervalFactor": 2,
           "legendFormat": "Latency Read HX-1",
           "refId": "A"
         },
         {
-          "expr": "Lat_Write{host='10.127.253.85'}",
+          "expr": "Lat_Write{host='10.2.17.14'}",
           "format": "time_series",
           "intervalFactor": 2,
           "legendFormat": "Latency Write HX-1",
           "refId": "B"
         },
         {
-          "expr": "Lat_Read{host='10.127.254.85'}",
+          "expr": "Lat_Read{host='10.2.14.15'}",
           "format": "time_series",
           "intervalFactor": 2,
           "legendFormat": "Latency Read HX-2",
           "refId": "C"
         },
         {
-          "expr": "Lat_Write{host='10.127.254.85'}",
+          "expr": "Lat_Write{host='10.2.14.15'}",
           "format": "time_series",
           "intervalFactor": 2,
           "legendFormat": "Latency Write HX-2",
@@ -406,7 +406,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "MBps_Read{host='10.127.253.85'}",
+          "expr": "MBps_Read{host='10.2.17.14'}",
           "format": "time_series",
           "intervalFactor": 2,
           "refId": "A"
@@ -487,7 +487,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "MBps_Write{host='10.127.253.85'}",
+          "expr": "MBps_Write{host='10.2.17.14'}",
           "format": "time_series",
           "intervalFactor": 2,
           "refId": "A"
@@ -568,7 +568,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "MBps_Read{host='10.127.254.85'}",
+          "expr": "MBps_Read{host='10.2.14.15'}",
           "format": "time_series",
           "intervalFactor": 2,
           "refId": "A"
@@ -649,7 +649,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "MBps_Write{host='10.127.254.85'}",
+          "expr": "MBps_Write{host='10.2.14.15'}",
           "format": "time_series",
           "intervalFactor": 2,
           "refId": "A"
@@ -730,7 +730,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "IOPS_Read{host='10.127.253.85'}",
+          "expr": "IOPS_Read{host='10.2.17.14'}",
           "format": "time_series",
           "intervalFactor": 2,
           "refId": "A"
@@ -811,7 +811,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "IOPS_Write{host='10.127.253.85'}",
+          "expr": "IOPS_Write{host='10.2.17.14'}",
           "format": "time_series",
           "intervalFactor": 2,
           "refId": "A"
@@ -892,7 +892,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "IOPS_Read{host='10.127.254.85'}",
+          "expr": "IOPS_Read{host='10.2.14.15'}",
           "format": "time_series",
           "intervalFactor": 2,
           "refId": "A"
@@ -973,7 +973,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "IOPS_Write{host='10.127.254.85'}",
+          "expr": "IOPS_Write{host='10.2.14.15'}",
           "format": "time_series",
           "intervalFactor": 2,
           "refId": "A"
@@ -1054,7 +1054,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "Lat_Read{host='10.127.253.85'}",
+          "expr": "Lat_Read{host='10.2.17.14'}",
           "format": "time_series",
           "intervalFactor": 2,
           "refId": "A"
@@ -1135,7 +1135,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "Lat_Write{host='10.127.253.85'}",
+          "expr": "Lat_Write{host='10.2.17.14'}",
           "format": "time_series",
           "intervalFactor": 2,
           "refId": "A"
@@ -1216,7 +1216,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "Lat_Read{host='10.127.254.85'}",
+          "expr": "Lat_Read{host='10.2.14.15'}",
           "format": "time_series",
           "intervalFactor": 2,
           "refId": "A"
@@ -1297,7 +1297,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "Lat_Write{host='10.127.254.85'}",
+          "expr": "Lat_Write{host='10.2.14.15'}",
           "format": "time_series",
           "intervalFactor": 2,
           "refId": "A"
